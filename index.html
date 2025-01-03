@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Теннис на Тетрисе</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://telegram.org/js/telegram-web-app.js"></script>
+</head>
+<body>
+    <div id="loadingScreen" class="screen">
+        <div class="loader"></div>
+        <p>Загрузка...</p>
+    </div>
+    <div id="mainMenu" class="screen hidden">
+        <h1>Теннис на Тетрисе</h1>
+        <button id="startButton" class="menu-button">Начать игру</button>
+    </div>
+    <div id="gameScreen" class="screen hidden">
+        <canvas id="gameCanvas"></canvas>
+        <div id="balance">Баланс: 0.00 руб</div>
+        <div id="gameOver" class="hidden">
+            <p>Игра окончена!</p>
+            <button id="restartButton" class="menu-button">Начать заново</button>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
